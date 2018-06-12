@@ -1,0 +1,22 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: biz-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+      
+zuul:
+  routes: 
+    sale: 
+      path: /spbiz/**
+      serviceId: biz-consumer
+    routeTest:
+      path: /routeTest/163
+      url: http://www.163.com
+    route163:
+      url: http://www.baidu.com
+    noRoute163:
+      url: www.163.com

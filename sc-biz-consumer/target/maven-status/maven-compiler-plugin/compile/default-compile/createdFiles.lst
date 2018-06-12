@@ -1,0 +1,5 @@
+com\client\biz\controller\CeshiController.class
+com\client\biz\feign\HelloClientFallback.class
+com\client\biz\ConsumerServer.class
+com\client\biz\feign\HelloClient.class
+com\client\biz\bean\Member.class

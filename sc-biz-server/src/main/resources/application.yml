@@ -1,0 +1,14 @@
+server:
+  port: 8761
+spring: 
+  application: 
+    name:  biz-server
+eureka:
+  instance:
+    instance-id: http://10.22.1.56:${server.port}
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+logging:
+  level: 
+    com.netflix: DEBUG

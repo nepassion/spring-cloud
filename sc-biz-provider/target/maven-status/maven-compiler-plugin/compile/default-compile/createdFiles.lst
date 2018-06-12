@@ -1,0 +1,14 @@
+com\client\biz\config\MybatisConfigurer.class
+com\client\biz\core\ProjectConstant.class
+com\client\biz\controller\HelloController.class
+com\client\biz\service\impl\UserServiceImpl.class
+com\client\biz\controller\UserController.class
+com\client\biz\service\UserService.class
+com\client\biz\bean\User.class
+com\client\biz\core\Service.class
+com\client\biz\dao\UserMapper.class
+com\client\biz\ProviderServer.class
+com\client\biz\bean\Member.class
+com\client\biz\core\ServiceException.class
+com\client\biz\core\AbstractService.class
+com\client\biz\core\Mapper.class

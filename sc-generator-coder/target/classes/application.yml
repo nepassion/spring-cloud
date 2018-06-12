@@ -1,0 +1,36 @@
+server:
+  port: 3000
+spring: 
+  application:
+    name: db-server
+  datasource: 
+    username: root
+    password: root
+    url: jdbc:mysql://10.22.1.56:3306/sp_biz?characterEncoding=utf8&useSSL=true
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    filters: stat
+    maxActive: 20
+    initialSize: 5
+    maxWait: 60000
+    minIdle: 5
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    maxOpenPreparedStatements: 20
+  jpa: 
+    database: MYSQL
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  jackson: 
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Chongqing 
+mybatis: 
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: org.sc.generator.coder.dao
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://10.22.1.56:8761/eureka/
+logging:
+  level:
+    com.netflix: DEBUG

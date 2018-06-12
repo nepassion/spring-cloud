@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.client.biz.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.client.biz.bean.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="pic" jdbcType="VARCHAR" property="pic" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_pass" jdbcType="VARCHAR" property="userPass" />
+    <result column="user_mail" jdbcType="VARCHAR" property="userMail" />
+    <result column="is_activate" jdbcType="INTEGER" property="isActivate" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="is_alive" jdbcType="INTEGER" property="isAlive" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="token" jdbcType="VARCHAR" property="token" />
+    <result column="send_time" jdbcType="TIMESTAMP" property="sendTime" />
+    <result column="is_active" jdbcType="BIT" property="isActive" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, nick_name, pic, sex, user_name, user_pass, user_mail, is_activate, create_time, 
+    is_alive, update_time, token, send_time, is_active
+  </sql>
+</mapper>
