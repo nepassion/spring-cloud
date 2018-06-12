@@ -1,43 +1,3 @@
-<<<<<<< HEAD
-spring: 
-  application:
-    name: biz-provider
-  profiles:
-    active: test
-  datasource: 
-    username: root
-    password: root
-    url: jdbc:mysql://10.22.1.56:3306/sp_biz?characterEncoding=utf8&useSSL=true
-    driver-class-name: com.mysql.jdbc.Driver
-    type: com.alibaba.druid.pool.DruidDataSource
-    filters: stat
-    maxActive: 20
-    initialSize: 5
-    maxWait: 60000
-    minIdle: 5
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 300000
-    maxOpenPreparedStatements: 20
-  jpa: 
-    database: MYSQL
-    database-platform: org.hibernate.dialect.MySQL5Dialect
-    show-sql: true
-  jackson: 
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: Asia/Chongqing 
-mybatis: 
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: com.client.biz.dao
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://10.22.1.56:8761/eureka/
-    register-with-eureka: true
-logging: 
-  level: 
-    com.netflix: DEBUG
-
-=======
 server: 
   port: 8777
 spring: 
@@ -50,29 +10,32 @@ feign:
   hystrix: 
     enabled: true
     command: 
-    default: 
-      execution: 
-        isolation:
-          thread:
-            timeoutInMilliseconds: 1000000   
-          circuitBreaker:  
-            requestVolumeThreshold: 200
->>>>>>> new version
+      default: 
+        execution: 
+          isolation:
+            thread:
+              timeoutInMilliseconds: 1000000   
+            circuitBreaker:  
+              requestVolumeThreshold: 200
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://10.22.1.56:8761/eureka/
+    register-with-eureka: true
+logging: 
+  level: 
+    com.netflix: DEBUG
 
    
 ---
 spring: 
   profiles: dev
-    
 server: 
-<<<<<<< HEAD
   port: 8070
   
 
 
 
-=======
-  port: 8087
 feign:
   hystrix: 
     enabled: true
@@ -93,14 +56,7 @@ hystrix:
             timeoutInMilliseconds: 1000000   
           circuitBreaker:  
             requestVolumeThreshold: 200
->>>>>>> new version
 ---
 spring: 
   profiles: test
     
-server: 
-<<<<<<< HEAD
-  port: 8083
-=======
-  port: 8088
->>>>>>> new version

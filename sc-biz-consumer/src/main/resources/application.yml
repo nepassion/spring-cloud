@@ -1,9 +1,5 @@
 server: 
-<<<<<<< HEAD
-  port: 8777
-=======
   port: 8080
->>>>>>> new version
 spring: 
   application:
     name: biz-consumer
@@ -12,15 +8,9 @@ feign:
     enabled: true
 hystrix: 
   command:
-<<<<<<< HEAD
-    HelloClient#hello():
-  execution: 
-    isolation:
-=======
-    default
+    default:
   execution: 
     isolation: 
->>>>>>> new version
       thread:
         timeoutInMilliseconds: 100   
       circuitBreaker:  
