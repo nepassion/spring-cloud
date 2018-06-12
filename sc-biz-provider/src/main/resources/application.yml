@@ -34,8 +34,6 @@ server:
   port: 8070
   
 
-
-
 feign:
   hystrix: 
     enabled: true
