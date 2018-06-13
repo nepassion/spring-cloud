@@ -52,7 +52,6 @@
 		<module>sc-biz-provider</module>
 		<module>sc-biz-consumer</module>
 		<module>sc-biz-zuul</module>
-    <module>sc
-		nerator-coder</module>
+   		<module>sc-generator-coder</module>
   </modules>
 </project>

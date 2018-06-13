@@ -1,0 +1,17 @@
+org\sc\generator\coder\web\UserController.class
+org\sc\generator\coder\dao\UserMapper.class
+org\sc\generator\coder\config\MybatisConfigurer.class
+org\sc\generator\coder\App.class
+org\sc\generator\coder\core\Mapper.class
+org\sc\generator\coder\core\ProjectConstant.class
+org\sc\generator\coder\core\ResultCode.class
+org\sc\generator\coder\core\Service.class
+org\sc\generator\coder\DBServer.class
+org\sc\generator\coder\service\D.class
+org\sc\generator\coder\model\User.class
+org\sc\generator\coder\core\ResultGenerator.class
+org\sc\generator\coder\core\ServiceException.class
+org\sc\generator\coder\core\Result.class
+org\sc\generator\coder\core\AbstractService.class
+org\sc\generator\coder\service\impl\UserServiceImpl.class
+org\sc\generator\coder\service\UserService.class
