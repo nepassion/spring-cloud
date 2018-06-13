@@ -1,5 +1,13 @@
-com\client\biz\controller\CeshiController.class
 com\client\biz\feign\HelloClientFallback.class
-com\client\biz\ConsumerServer.class
 com\client\biz\feign\HelloClient.class
+com\client\biz\core\Result.class
+com\client\biz\ConsumerServer.class
+com\client\biz\feign\fallback\UserFeignFallback.class
+com\client\biz\core\ResultGenerator.class
+com\client\biz\controller\CeshiController.class
+com\client\biz\core\ResultCode.class
+com\client\biz\web\CeshiController.class
+com\client\biz\model\User.class
 com\client\biz\bean\Member.class
+com\client\biz\core\ServiceException.class
+com\client\biz\feign\UserFeign.class

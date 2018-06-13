@@ -1,7 +1,6 @@
 org\sc\generator\coder\web\UserController.class
 org\sc\generator\coder\dao\UserMapper.class
 org\sc\generator\coder\config\MybatisConfigurer.class
-org\sc\generator\coder\App.class
 org\sc\generator\coder\core\Mapper.class
 org\sc\generator\coder\core\ProjectConstant.class
 org\sc\generator\coder\core\ResultCode.class
